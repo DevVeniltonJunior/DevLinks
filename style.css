@@ -6,22 +6,24 @@
 
 :root {
   --text-color: white;
-  --backgroud-image: url(./assets/bg-mobile.jpg);
+  --backgroud-image: url(./assets/bg-mobile.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-rover-color: rgba(0, 0, 0, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.1);
   --switch-image: url(./assets/moon-stars.svg);
+  --switch-border: 0;
 }
 
 .light {
   --text-color: black;
-  --backgroud-image: url(./assets/bg-mobile-light.jpg);
+  --backgroud-image: url(./assets/bg-mobile-light.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-rover-color: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
+  --switch-border: 1px solid var(--stroke-color);
 }
 
 body {
@@ -65,7 +67,7 @@ body * {
   width: 32px;
   height: 32px;
   background: white var(--switch-image) no-repeat center;
-  border: 0;
+  border: --switch-border;
   left: 0;
   border-radius: 50%;
   position: absolute;
