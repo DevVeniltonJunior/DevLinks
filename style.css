@@ -28,6 +28,7 @@
 
 body {
   background: var(--backgroud-image) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -37,6 +38,7 @@ body * {
 
 #container {
   width: 360px;
+  max-width: 588px;
   margin: 56px auto auto;
   padding: 0 24px;
 }
@@ -67,18 +69,22 @@ body * {
   width: 32px;
   height: 32px;
   background: white var(--switch-image) no-repeat center;
-  border: --switch-border;
+  border: 0;
   left: 0;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
   top: 50%;
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -152,4 +158,32 @@ footer {
 footer:hover {
   font-size: 16px;
   text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --backgroud-image: url(./assets/bg-desktop.png);
+  }
+
+  .light {
+    --backgroud-image: url(./assets/bg-desktop-light.png);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
