@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://devveniltonjunior.github.io/DevLinks/">Página</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://devveniltonjunior.github.io/DevLinks/" target="_blank">Página</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
